@@ -5,12 +5,12 @@ print( { key: [ i for i in range(j, len(list)) if key == list[i] ] for j, key in
 
 # задание 2
 
-def jaccardSimiliarity(setFirst: set, setSecond: set):
+def JaccardSimilarity(setFirst: set, setSecond: set):
     count = 0
     for elem in setFirst:
          if (elem in setSecond):
              count += 1
     return count / (len(setFirst) + len(setSecond) - count)
 
-print( jaccardSimiliarity( {1, 2, 3, 5},{1, 4, 3, 5} ) )
-print( jaccardSimiliarity( {'This', 'set'}, {'This', 'set', 'too'} ) )
+print( JaccardSimilarity( {1, 2, 3, 5},{1, 4, 3, 5} ) )
+print( JaccardSimilarity( {'This', 'set'}, {'This', 'set', 'too'} ) )
