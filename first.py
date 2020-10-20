@@ -1,7 +1,7 @@
 # задание 1
 
 list = ['a', 'b', 'c', 'd', 'e', 'a', 'a', 'b', 'c']
-print( { value: [ i for i in range(j, len(list)) if value == list[i] ] for j, value in enumerate(list) if list.index(value) >= j} )
+print( { key: [ i for i in range(j, len(list)) if key == list[i] ] for j, key in enumerate(list) if list.index(key) >= j} )
 
 # задание 2
 
